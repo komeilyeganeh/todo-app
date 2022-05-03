@@ -5,7 +5,9 @@ import "./App.css";
 import { useSelector } from "react-redux";
 
 function App() {
-  const todos = useSelector((state) => state.todos.length);
+  const todos = useSelector((state) => state.todos);
+  const todosLength = todos.length;
+
   return (
     <div className="app">
       <motion.h1
@@ -22,10 +24,21 @@ function App() {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
-        Tasks: {todos}
+        Tasks : {todosLength}
       </motion.p>
       <AddTodoForm />
-      <TodoList />
+      {todosLength > 0 ? (
+        <TodoList />
+      ) : (
+        <motion.div
+          className="not_found"
+          transition={{ delay: 0.6 }}
+          initial={{ y: 55, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+        >
+          The list is empty!
+        </motion.div>
+      )}
     </div>
   );
 }

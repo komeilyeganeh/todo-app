@@ -8,9 +8,18 @@
   align-items: center;
 }
 .title {
-  color: #e04d01;
+  color: #FF7700;
 }
 .length_task {
-  color: rgb(0, 228, 0);
+  color: rgb(252, 252, 252);
   margin-top: 1rem;
+}
+.not_found {
+  margin-top: 2rem;
+  width: 100%;
+  padding: .8rem 0;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, .2);
 }

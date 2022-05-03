@@ -19,10 +19,9 @@
   border: none;
   padding: 0.4rem 1.2rem;
   cursor: pointer;
-  transition: .2s ease-in-out;
 }
 .success {
-    transition: .2s ease-in-out;
+    transition: .2s linear;
   background-color: rgba(0, 230, 0, 0.479);
 }
 .success input[type="checkbox"] {
