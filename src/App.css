@@ -8,5 +8,9 @@
   align-items: center;
 }
 .title {
-  color: #E04D01;
+  color: #e04d01;
+}
+.length_task {
+  color: rgb(0, 228, 0);
+  margin-top: 1rem;
 }

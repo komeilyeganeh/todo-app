@@ -1,22 +1,39 @@
 .item {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
 }
 .title_todo {
-    display: flex;
-    align-items: center;
-    column-gap: 8px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
 }
 .btn_delete {
-    background-color: #251D3A;
-    color: #fff;
-    font-size: .9rem;
-    border-radius: 10px;
-    border: none;
-    padding:.4rem 1.2rem;
-    cursor: pointer;
+  background-color: #251d3a;
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  border: none;
+  padding: 0.4rem 1.2rem;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+.success {
+    transition: .2s ease-in-out;
+  background-color: rgba(0, 230, 0, 0.479);
+}
+.success input[type="checkbox"] {
+    accent-color: #fff;
+}
+.success .btn_delete {
+  background-color: #fff;
+  color: #000;
+}
+.success_text {
+  text-decoration: line-through;
+  color: #fff;
+  font-weight: bold;
 }
