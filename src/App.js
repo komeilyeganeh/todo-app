@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import AddTodoForm from './components/AddTodoForm';
+import TodoList from './components/TodoList';
+import { motion } from 'framer-motion';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <motion.h1 className="title" transition={{ delay: .2 }} initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>Todo List (Redux)</motion.h1>
+      <AddTodoForm />
+      <TodoList />
     </div>
   );
 }
