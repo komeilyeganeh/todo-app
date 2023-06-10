@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const defaulState = [];
+const initialState = [];
 
 export const TodoSlice = createSlice({
   name: "todos",
-  initialState: defaulState,
+  initialState,
   reducers: {
     addTodo: (state, action) => {
       const todo = {
